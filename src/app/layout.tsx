@@ -23,10 +23,10 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 
   return {
-    title: siteName,
-    description: '影视聚合',
-    manifest: '/manifest.json',
-  };
+  title: `${siteName} - 免费在线视频搜索与观看平台`,
+  description: '在线视频、免费视频、视频搜索、电影、电视剧、TV321.cc',
+  manifest: '/manifest.json',
+};
 }
 
 export const viewport: Viewport = {
