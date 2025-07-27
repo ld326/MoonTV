@@ -53,7 +53,7 @@ try {
   if (!fs.existsSync(publicDir)) {
     fs.mkdirSync(publicDir, { recursive: true });
   }
-
+/*
   // 写入 manifest.json
   fs.writeFileSync(manifestPath, JSON.stringify(manifestTemplate, null, 2));
   console.log(`✅ Generated manifest.json with site name: ${siteName}`);
@@ -61,3 +61,4 @@ try {
   console.error('❌ Error generating manifest.json:', error);
   process.exit(1);
 }
+*/
