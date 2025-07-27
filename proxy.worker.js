@@ -8,14 +8,14 @@ async function handleRequest(request) {
   try {
     const url = new URL(request.url);
 
-    // 如果访问根目录，返回HTML
-   // if (url.pathname === '/') {
-     // return new Response(getRootHtml(), {
-      //  headers: {
-         // 'Content-Type': 'text/html; charset=utf-8',
-      //  },
-    //  });
-  //  }
+    //如果访问根目录，返回HTML
+    if (url.pathname === '/') {
+      return new Response(getRootHtml(), {
+        headers: {
+          'Content-Type': 'text/html; charset=utf-8',
+        },
+      });
+    }
 
     // 从请求路径中提取目标 URL
     let actualUrlStr = decodeURIComponent(url.pathname.replace('/', ''));
